@@ -79,9 +79,9 @@ function ChatInput({ chatId }: Props) {
                 </button>
             </form>
 
-            <div className="md:hidden">
+            {/* <div className="md:hidden">
                 <ModelSelection />
-            </div>
+            </div> */}
         </div>
     )
 }

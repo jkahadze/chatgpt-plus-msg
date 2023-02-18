@@ -29,7 +29,7 @@ function Chat({ chatId }: Props) {
                     <p className="mt-10 text-center text-white">
                         Type a prompt to get started.
                     </p>
-                    <ArrowDownCircleIcon className="h-10 w-10 mx-auto mt-5 text-white animate-bounce" />
+                    {/* <ArrowDownCircleIcon className="h-10 w-10 mx-auto mt-5 text-white animate-bounce" /> */}
                 </>
             )}
             {messages?.docs.map((message) => (

@@ -1,5 +1,6 @@
 import Chat from "../../../components/Chat"
 import ChatInput from "../../../components/ChatInput"
+import MobileMenu from "../../../components/MobileMenu"
 
 type Props = {
     params: {
@@ -9,7 +10,8 @@ type Props = {
 
 function ChatPage({ params: { id } }: Props) {
     return (
-        <div className="flex flex-col h-screen overflow-hidden">
+        <div className="flex flex-col min-h-screen overflow-hidden max-h-screen">
+            <MobileMenu />
             {/* Chat  */}
             <Chat chatId={id} />
             {/* ChatInput */}
