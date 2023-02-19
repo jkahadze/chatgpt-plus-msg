@@ -23,7 +23,7 @@ export default async function RootLayout({
           {!session ? (
             <Login />
           ) : (
-            <div className='flex'>
+            <div className='flex pb-safe'>
 
               <SideBar />
 
