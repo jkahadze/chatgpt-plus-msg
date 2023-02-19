@@ -1,52 +1,29 @@
-import React from 'react'
+"use client"
+
+import React, { useContext } from 'react'
 import { SunIcon, BoltIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline'
+import MobileMenu from '../components/MobileMenu'
+import { SideBarContext, SidebarContextProvider } from '../components/SidebarContext'
 
 function HomePage() {
+
+    const { showSide, setShowSide } = useContext(SideBarContext)
+
+    function exitSideBar() {
+        if (showSide) {
+            setShowSide((showSide: any) => !showSide);
+        }
+    }
+
     return (
-        <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
-            <h1 className="text-5xl font-bold mb-20">ChatGPT Plus Messenger</h1>
+        <div onClick={exitSideBar} className='flex flex-col'>
 
-            <div className='flex space-x-2 text-center'>
-                <div>
-                    <div className='flex flex-col items-center justify-center mb-5'>
-                        {/* Sun Icon */}
-                        <SunIcon className="h-8 w-8" />
-                        <h2>Examples</h2>
-                    </div>
+            <MobileMenu />
 
-                    <div className="space-y-2">
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div className='flex flex-col items-center justify-center mb-5'>
-                        {/* Sun Icon */}
-                        <BoltIcon className="h-8 w-8" />
-                        <h2>Capabilities</h2>
-                    </div>
-
-                    <div className="space-y-2">
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                    </div>
-                </div>
-
-                <div>
-                    <div className='flex flex-col items-center justify-center mb-5'>
-                        {/* Sun Icon */}
-                        <ExclamationTriangleIcon className="h-8 w-8" />
-                        <h2>Limitations</h2>
-                    </div>
-
-                    <div className="space-y-2">
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                        <p className="infoText">"Explain Something to me"</p>
-                    </div>
+            <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
+                <h1 className="text-5xl font-bold mb-20">ChatGPT Plus Messenger</h1>
+                <div className='flex space-x-2 text-center'>
+                    <p className='-m-10'>ChatGPT with some extra features.</p>
                 </div>
             </div>
         </div>
