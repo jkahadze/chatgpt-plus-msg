@@ -23,7 +23,7 @@ function ChatPage({ params: { id } }: Props) {
     }
 
     return (
-        <div onClick={exitSideBar} className="flex flex-col min-h-screen overflow-hidden max-h-screen">
+        <div onClick={exitSideBar} className="flex h-screen flex-col">
             <MobileMenu />
             {/* Chat  */}
             <Chat chatId={id} />
