@@ -24,7 +24,7 @@ export function SidebarContextProvider({
 
     useEffect(() => {
         const sidebar = document.querySelector(".sidebar");
-        sidebar?.classList.toggle("-translate-x-full");
+        showSide ? (sidebar?.classList.remove("-translate-x-full")) : (sidebar?.classList.add("-translate-x-full"));
     }, [showSide])
 
     return (

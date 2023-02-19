@@ -11,7 +11,7 @@ function HomePage() {
 
     function exitSideBar() {
         if (showSide) {
-            setShowSide((showSide: any) => !showSide);
+            setShowSide(false);
         }
     }
 

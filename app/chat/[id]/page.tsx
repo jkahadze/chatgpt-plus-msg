@@ -18,7 +18,7 @@ function ChatPage({ params: { id } }: Props) {
 
     function exitSideBar() {
         if (showSide) {
-            setShowSide((showSide: any) => !showSide);
+            setShowSide(false);
         }
     }
 
