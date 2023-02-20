@@ -48,7 +48,7 @@ function ChatRow({ id }: Props) {
         <div className={`flex rounded-lg items-center justify-center hover:bg-gray-700/70 cursor-pointer transition-all duration-200 ease-out ${active && "bg-gray-700/50"}`}>
             <Link href={`/chat/${id}`} onClick={exitSideBar} className={`flex px-5 py-5 space-x-2 text-sm w-full items-center justify-center text-gray-300 `} >
                 <ChatBubbleLeftIcon className="h-5 w-5" />
-                <p className="flex-1 inline-flex">{messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat"}</p>
+                <p className="flex-1 inline-flex text-base">{messages?.docs[messages?.docs.length - 1]?.data().text || "New Chat"}</p>
             </Link >
             <div className={`flex px-5 py-5 space-x-2 text-sm items-center justify-center text-gray-300 `}>
                 <TrashIcon

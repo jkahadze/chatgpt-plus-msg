@@ -13,7 +13,7 @@ function ModelSelection() {
     return (
         <div className="mt-2">
             <Select
-                className="mt-2"
+                className="mt-2 text-base"
                 options={models?.modelOptions}
                 defaultValue={model}
                 isSearchable

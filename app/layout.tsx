@@ -24,7 +24,7 @@ export default async function RootLayout({
             <Login />
           ) : (
             <SidebarContextProvider>
-              <div className='flex pb-safe'>
+              <div className='flex'>
 
                 <SideBar />
 
