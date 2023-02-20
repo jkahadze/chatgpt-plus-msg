@@ -2,12 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html {
+        height: -webkit-fill-available;
+    }
+
+    body {
+        height: -webkit-fill-available;
+    }
+
+    /* If using React, set height on the root div as well */
+    #root {
+        height: -webkit-fill-available;
+    }
+}
+
 @layer components {
     .infoText {
         @apply p-4 bg-gray-700/70 rounded-lg max-w-[300px]
     }
 
     .chatRow {
-        @apply rounded-lg px-5 py-5 text-sm flex items-center justify-center space-x-2 hover:bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out
+        @apply rounded-lg px-5 py-5 text-sm flex items-center justify-center space-x-2 hover: bg-gray-700/70 cursor-pointer text-gray-300 transition-all duration-200 ease-out
     }
 }
