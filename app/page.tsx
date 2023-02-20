@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useContext } from 'react'
-import { SunIcon, BoltIcon, ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import MobileMenu from '../components/MobileMenu'
 import { SideBarContext, SidebarContextProvider } from '../components/SidebarContext'
 

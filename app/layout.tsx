@@ -23,20 +23,19 @@ export default async function RootLayout({
           {!session ? (
             <Login />
           ) : (
-            <div className='flex pb-safe'>
+            <SidebarContextProvider>
+              <div className='flex pb-safe'>
 
-              <SideBar />
+                <SideBar />
 
+                {/* Client Provider */}
+                <ClientProvider />
 
-              {/* Client Provider */}
-              <ClientProvider />
-
-              <div className='bg-[#343541] flex-1'>
-                <SidebarContextProvider>
+                <div className='bg-[#343541] flex-1'>
                   {children}
-                </SidebarContextProvider>
+                </div>
               </div>
-            </div>
+            </SidebarContextProvider>
           )}
         </SessionProvider>
       </body>

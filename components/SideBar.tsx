@@ -7,6 +7,8 @@ import { db } from "../firebase"
 import { collection, orderBy, query } from "firebase/firestore"
 import ChatRow from "./ChatRow"
 import ModelSelection from "./ModelSelection"
+import { SideBarContext } from "./SidebarContext"
+import { useContext } from "react"
 
 function SideBar() {
 
@@ -17,6 +19,8 @@ function SideBar() {
             orderBy("createdAt", "asc")
         )
     );
+
+    const { showSide, setShowSide } = useContext(SideBarContext);
 
     return (
         <div className="sidebar bg-[#202123] max-w-xs h-screen overflow-y-auto min-w-[20rem] absolute md:relative md:translate-x-0 inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
