@@ -16,8 +16,6 @@ type Props = {
 
 function ChatRow({ id }: Props) {
 
-    console.log("CHAT ROW RENDER")
-
     const pathname = usePathname();
     const router = useRouter();
     const { data: session } = useSession();
