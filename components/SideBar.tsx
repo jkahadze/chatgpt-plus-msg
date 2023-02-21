@@ -50,7 +50,7 @@ function SideBar() {
 
                 {session &&
                     <div className="flex align-middle justify-center">
-                        <div onClick={() => signOut()} className={`flex truncate hover:opacity-50 w-24 px-5 py-5 flex-col mb-20 rounded-lg items-center justify-center hover:bg-gray-700/70 cursor-pointer transition-all duration-200 ease-out text-white`}>
+                        <div onClick={() => signOut()} className={`flex truncate hover:opacity-50 w-24 px-5 py-5 flex-col md:mb-4 mb-20 rounded-lg items-center justify-center hover:bg-gray-700/70 cursor-pointer transition-all duration-200 ease-out text-white`}>
                             <img
                                 src={session.user?.image!}
                                 alt="Profile Picture"

@@ -11,7 +11,7 @@ function Message({ message }: Props) {
     return (
         <div className={`py-5 text-white ${isChatGPT && "bg-[#434654]"}`}>
             <div className="flex space-x-5 px-10 max-x-2xl mx-auto">
-                <img src={message.user.avatar} alt="" className="h-8 w-8" />
+                <img src={message.user.avatar} alt="" className="h-8 w-8 rounded-full" />
                 <p className="pt-1 text-base">{message.text}</p>
             </div>
         </div>
