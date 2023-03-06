@@ -2,20 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    html {
-        min-height: -webkit-fill-available;
-    }
-
-    body {
-        min-height: -webkit-fill-available;
-    }
-
-    #root {
-        min-height: -webkit-fill-available;
-    }
-}
-
 @layer components {
     .infoText {
         @apply p-4 bg-gray-700/70 rounded-lg max-w-[300px]

@@ -15,7 +15,7 @@ function HomePage() {
     }
 
     return (
-        <div onClick={exitSideBar} className='flex flex-col h-screen'>
+        <div onClick={exitSideBar} className='flex flex-col min-h-fill'>
 
             <MobileMenu />
 

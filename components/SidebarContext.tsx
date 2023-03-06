@@ -22,11 +22,6 @@ export function SidebarContextProvider({
 
     const [showSide, setShowSide] = useState(false);
 
-    useEffect(() => {
-        const sidebar = document.querySelector(".sidebar");
-        showSide ? (sidebar?.classList.remove("-translate-x-full")) : (sidebar?.classList.add("-translate-x-full"));
-    }, [showSide])
-
     return (
         <SideBarContext.Provider value={{ showSide, setShowSide }}>
             {children}

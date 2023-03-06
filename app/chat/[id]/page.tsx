@@ -23,7 +23,7 @@ function ChatPage({ params: { id } }: Props) {
     }
 
     return (
-        <div onClick={exitSideBar} className="flex h-screen flex-col">
+        <div onClick={exitSideBar} className="flex flex-col min-h-fill">
             <MobileMenu />
             {/* ChatInput */}
             <ChatInput chatId={id} />

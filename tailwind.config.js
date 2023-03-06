@@ -6,7 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      minHeight: {
+        fill: '-webkit-fill-available'
+      }
+    },
   },
   plugins: [require('tailwindcss-safe-area')],
 }
