@@ -18,7 +18,7 @@ export default async function RootLayout({
   return (
     <html>
       <head />
-      <body className='py-safe'>
+      <body>
         <SessionProvider session={session} >
           {!session ? (
             <Login />
