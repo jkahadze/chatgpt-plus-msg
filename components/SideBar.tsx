@@ -24,7 +24,7 @@ function SideBar() {
 
     return (
         <div className={`sidebar bg-[#202123] max-w-xs min-h-fill overflow-y-auto min-w-[20rem] absolute md:relative md:translate-x-0 inset-y-0 left-0 transform ${!showSide && `-translate-x-full`} transition duration-200 ease-in-out`}>
-            <div className="p-2 flex flex-col">
+            <div className="p-2 flex flex-col min-h-fill">
                 <div className="flex-1">
                     <NewChat />
 
