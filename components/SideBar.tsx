@@ -23,7 +23,7 @@ function SideBar() {
     const { showSide, setShowSide } = useContext(SideBarContext);
 
     return (
-        <div className="sidebar bg-[#202123] max-w-xs h-screen overflow-y-auto min-w-[20rem] absolute md:relative md:translate-x-0 inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
+        <div className="sidebar bg-[#202123] max-w-xs h-full overflow-y-auto min-w-[20rem] absolute md:relative md:translate-x-0 inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out">
             <div className="p-2 flex flex-col h-screen">
                 <div className="flex-1">
                     <NewChat />

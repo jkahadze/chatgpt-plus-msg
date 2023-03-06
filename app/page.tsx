@@ -15,14 +15,16 @@ function HomePage() {
     }
 
     return (
-        <div onClick={exitSideBar} className='flex flex-col'>
+        <div onClick={exitSideBar} className='flex flex-col h-screen'>
 
             <MobileMenu />
 
-            <div className="flex flex-col items-center justify-center h-screen px-2 text-white">
-                <h1 className="text-5xl font-bold mb-20">ChatGPT Plus Messenger</h1>
-                <div className='flex space-x-2 text-center'>
-                    <p className='-m-10'>ChatGPT with some extra features.</p>
+            <div className="flex flex-col items-center justify-center px-10 text-white my-auto">
+
+                <h1 className="pb-10 text-5xl font-bold text-center">ChatGPT Plus Messenger</h1>
+
+                <div className='flex text-center'>
+                    <p>ChatGPT with some extra features.</p>
                 </div>
             </div>
         </div>

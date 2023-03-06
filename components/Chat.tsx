@@ -27,7 +27,7 @@ function Chat({ chatId }: Props) {
         <div className="flex-1 overflow-y-auto overflow-x-hidden">
             {messages?.empty && (
                 <>
-                    <p className="text-base text-center text-white">
+                    <p className="text-base text-center text-white my-10">
                         Type a prompt above to get started.
                     </p>
                     {/* <ArrowDownCircleIcon className="h-10 w-10 mx-auto mt-5 text-white animate-bounce" /> */}
