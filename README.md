@@ -1,7 +1,9 @@
 # ChatGPT Plus Messenger
 
-http://www.chatgpt-plus-messenger.com/
+Visit App Here: http://www.chatgpt-plus-messenger.com/
 
-A ChatGPT Client with the option to choose the AI model. Created for the purpose of learning the below technologies and becoming a better developer. 
+Custom ChatGPT Messenger web app allowing users to select a language model with which to query ChatGPT. Built for educational purposes as a part of NextJS training.
 
-Tech Stack: Next.js 13, Firebase, Tailwind CSS, TypeScript
+Tools: React/Next.js 13, FireStore, Tailwind CSS, TypeScript, NextAuth
+
+
